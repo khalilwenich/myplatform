@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-white text-gray-800 antialiased;
+}
+
+.dark body {
+  @apply bg-gray-900 text-gray-100;
+}
+
+.container { @apply max-w-5xl mx-auto px-4; }
+
+/* simple utility for subtle card */
+.card { @apply bg-white/70 dark:bg-gray-800/60 rounded-lg shadow-md p-6; }
